@@ -13,7 +13,8 @@ SetTitleMatchMode "RegEx"
 ; ~~~~~ NEWB CUTOFF ~~~~~
 ; If you copy just the above stuff and the hotstrings.ahk file, you'll have enough to get started with AHK.
 
-#Include HotStringAdder.ahk ; Easily add new hotstrings to HotStrings.ahk
+#Include <HotStringAdder> ; Easily add new hotstrings to HotStrings.ahk
+
 
 /*
 Some notes on hotkey modifier symbols
