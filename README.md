@@ -11,6 +11,9 @@ Everything is called from `main`. If you're completely new to AHK, you can just 
 
 Otherwise, feel free to download the entire thing, or scavenge just the parts that seem useful to you.
 
+To ensure that the hotkeys and hotstrings are available at every boot, create a shortcut to `main.ahk` in the `Startup` folder.
+Press `Win + R` to open the Run dialog, type `shell:startup`, and press `Enter`. You can then paste your shortcut in the opened folder.
+ 
 
 ### Installing AHK
 
