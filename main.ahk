@@ -15,7 +15,7 @@ SetTitleMatchMode "RegEx"
 
 #Include <HotStringAdder> ; Easily add new hotstrings to HotStrings.ahk
 #Include <remdir> ; Remove nested directories in Windows Explorer
-
+#Include <secret> ; Any scripts that contain sensitive information. Not included in the repo.
 
 /*
 Some notes on hotkey modifier symbols
