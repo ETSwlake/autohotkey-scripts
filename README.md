@@ -11,6 +11,7 @@ Everything is called from `main`. If you're completely new to AHK, you can just 
 
 Otherwise, feel free to download the entire thing, or scavenge just the parts that seem useful to you.
 
+
 ### Installing AHK
 
 If you have winget, you can do `winget install autohotkey.autohotkey`. Otherwise you can download it from [the site](https://www.autohotkey.com/). **Make sure you download v2.0**. These scripts won't work in v1!
@@ -25,15 +26,3 @@ If you have winget, you can do `winget install autohotkey.autohotkey`. Otherwise
 1. Some hotkeys are keyed to the numpad.
 
 As this is adapted from my personal scripts, which I've steadily developed over time, not all hotkeys follow these rules.
-
-### Learning Opportunities
-
-Several of the files showcase different topics in AHK. Among them:
-
-* Input hooks, extensible hotkeys: [Folders.ahk](/Lib/Launchers/Folders.ahk)
-* Window Groups: [WindowSwitching.ahk](/Lib/WindowSwitching.ahk)
-* Using external programs: [Timezone.ahk](/Lib/Timezone.ahk)
-* GUIs, reading files: [GUI.ahk](/Lib/GUI.ahk)
-* Objects, writing to files: [Researcher.ahk](/Lib/Researcher.ahk)
-
-When the same topic (like `#HotIf`) appears in multiple files, I erred on the side of redundant information.
