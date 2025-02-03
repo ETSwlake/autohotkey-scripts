@@ -1,4 +1,6 @@
-﻿; Hotstrings are text that's replaced when you type them. I use a lot of them, they're super handy.
+#Requires AutoHotkey v2.0
+
+; Hotstrings are text that's replaced when you type them. I use a lot of them, they're super handy.
 ; READ MORE: https://www.autohotkey.com/docs/v2/Hotstrings.htm
 
 ; All my hotstrings start with a ; so that I unintentionally trigger any of them
@@ -7,17 +9,43 @@
 
 ; MATH STUFF
 ; O means it doesn't add a space after completing
+; C means it is case sensitive
 
-:O:;e::∃
-:O:;a::∀
-::;in::∈
+:O:;pm::±
+::;diam::⌀
+::;deg::°
+::;inf::∞
+::;approx::≈
 ::;neq::≠
 ::;leq::≤
 ::;geq::≥
-:O:;nat::ℕ
-:O:;int::ℤ
-:O:;real::ℝ
+:O:;sqrt::√
+:O:;cbrt::∛
+::;sqr::²
+::;cube::³
+:O:;sum::∑
+:O:;prod::∏
+:O:;int::∫
+::;alpha::α
+::;beta::β
+::;gamma::γ
+:C:;Delta::∆
+:C:;delta::δ
+::;epsilon::ε
+::;zeta::ζ
+::;eta::η
+::;theta::θ
+:C:;Lambda::Λ
+:C:;lambda::λ
+::;mu::μ
 ::;pi::π
+::;rho::ρ
+::;sigma::σ
+:C:;Phi::Φ
+:C:;phi::φ
+::;psi::ψ
+:C:;Omega::Ω
+:C:;omega::ω
 
 ; Text stuff
 ; R means it won't parse {Space} as ' ' or `r as a newline
@@ -42,14 +70,6 @@
 
 ; MISC STUFF
 
-::;ahk::AutoHotKey
-::;shrug::¯\_(ツ)_/¯ 
-:R:;mdshrug::¯\\\_(ツ)\_/¯
-:R:;zoom::https://myzoomlink.zoom.us/
-
-::;adr::My address (street and apt num)
-::;fadr::Full address(street `r city, state, zip)
 
 ; AUTOGEN
 ; Anything added by the HotStringAdder.ahk will go below here.
-
