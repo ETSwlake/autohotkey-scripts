@@ -7,7 +7,7 @@
             try {
                 if (window.HWND = hwnd) {
                     currentDir := window.Document.Folder.Self.Path
-                    Run "cmd /c `"" A_ScriptDir "\..\remdir.bat`"", currentDir
+                    Run "cmd /c `"" A_ScriptDir "\..\scripts\remdir.bat`"", currentDir
                     break
                 }
             }
