@@ -14,6 +14,7 @@ SetTitleMatchMode "RegEx"
 ; If you copy just the above stuff and the hotstrings.ahk file, you'll have enough to get started with AHK.
 
 #Include <HotStringAdder> ; Easily add new hotstrings to HotStrings.ahk
+#Include <remdir> ; Remove nested directories in Windows Explorer
 
 
 /*
