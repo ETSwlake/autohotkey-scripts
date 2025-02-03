@@ -12,7 +12,7 @@
 ; C means it is case sensitive
 
 :O:;pm::±
-::;diam::⌀
+::;diam::∅
 ::;deg::°
 ::;inf::∞
 ::;approx::≈
