@@ -12,10 +12,10 @@
 ; C means it is case sensitive
 
 :O?:;pm::±
-::;diam::∅
-::;deg::°
-::;degC::°C
-::;degF::°F
+:?:;diam::∅
+:?:;deg::°
+:?:;degC::°C
+:?:;degF::°F
 ::;inf::∞
 ::;approx::≈
 ::;neq::≠
@@ -23,8 +23,8 @@
 ::;geq::≥
 :O:;sqrt::√
 :O:;cbrt::∛
-::;sqr::²
-::;cube::³
+:?:;sqr::²
+:?:;cube::³
 :O:;sum::∑
 :O:;prod::∏
 :O:;int::∫
@@ -52,10 +52,10 @@
 ; Text stuff
 ; R means it won't parse {Space} as ' ' or `r as a newline
 ;  (probably unneeded but I like the peace of mind)
-:RO:;en::–
-:RO:;em::—
-:R:;ddd::…
-:RO:;terro::‽
+:RO?:;en::–
+:RO?:;em::—
+:R?:;ddd::…
+:RO?:;terro::‽
 
 ; DATE FUNCTIONS
 ; Hotstrings can also trigger functions!
