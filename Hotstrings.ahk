@@ -11,9 +11,11 @@
 ; O means it doesn't add a space after completing
 ; C means it is case sensitive
 
-:O:;pm::±
+:O?:;pm::±
 ::;diam::∅
 ::;deg::°
+::;degC::°C
+::;degF::°F
 ::;inf::∞
 ::;approx::≈
 ::;neq::≠
