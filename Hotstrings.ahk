@@ -75,3 +75,5 @@
 
 ; AUTOGEN
 ; Anything added by the HotStringAdder.ahk will go below here.
+
+:R:;ohw::OHWM, 573.4 IGLD85
