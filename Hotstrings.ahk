@@ -10,6 +10,7 @@
 ; MATH STUFF
 ; O means it doesn't add a space after completing
 ; C means it is case sensitive
+; ? means it will trigger without leading whitespace. eg `25;deg` will produce `25°`, but `25;approx` will not trigger. `25 ;approx` will.
 
 :O?:;pm::±
 :?:;diam::∅
