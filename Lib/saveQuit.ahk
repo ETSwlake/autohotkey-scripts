@@ -1,26 +1,36 @@
->^!s:: ; Right Ctrl + Alt + S
+#Requires AutoHotkey v2.0
+
+>^!s::{ ; Right Ctrl + Alt + S
 
 ; List of programs to manage
-programs := ["acadlt.exe", "excel.exe", "winword.exe", "notepad++.exe"
+programs := ["acadlt.exe", "excel.exe", "winword.exe", "notepad++.exe"]
 
-Loop, % programs.MaxIndex()
+for program in programs
 {
-    program := programs[A_Index]
-
     ; Check if the program is running
-    Process, Exist, %program%
-    if (ErrorLevel)
+    if (ProcessExist(program))
     {
+        ; Initialize id variable
+        id := []
+        
         ; Loop through all windows of the program
-        WinGet, id, List, ahk_exe %program%
-        Loop, %id%
+        WinGet id, 'List', 'ahk_exe ' program
+        if (id.Length > 0) ; Check if any windows were found
         {
-            WinActivate, ahk_id %id%A_Index%
-            Sleep, 500 ; Adjust as needed
-            Send, ^s ; Save work (Ctrl + S)
-            Sleep, 500 ; Adjust as needed
-            WinClose, ahk_id %id%A_Index%
+            for windowId in id
+            {
+                WinActivate('ahk_id ' windowId)
+                Sleep 500 ; Adjust as needed
+                Send '^s' ; Save work (Ctrl + S)
+                Sleep 500 ; Adjust as needed
+                WinClose('ahk_id ' windowId)
+            }
         }
     }
 }
 return
+}
+
+ProcessExist(name) {
+    return !!DllCall("GetProcessIdByName", "Str", name, "UInt")
+}
