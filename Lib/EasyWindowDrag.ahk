@@ -31,7 +31,7 @@ CoordMode "Mouse"
 
 g_DoubleAlt := false
 
-!LButton::
+^!LButton::
 {
     global g_DoubleAlt  ; Declare it since this hotkey function must modify it.
     if g_DoubleAlt
@@ -63,7 +63,7 @@ g_DoubleAlt := false
     }
 }
 
-!RButton::
+^!RButton::
 {
     global g_DoubleAlt
     if g_DoubleAlt
@@ -116,7 +116,7 @@ g_DoubleAlt := false
 
 ; "Alt + MButton" may be simpler, but I like an extra measure of security for
 ; an operation like this.
-!MButton::
+^!MButton::
 {
     global g_DoubleAlt
     if g_DoubleAlt
