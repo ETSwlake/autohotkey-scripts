@@ -18,6 +18,7 @@ SetTitleMatchMode "RegEx"
 #Include <EasyWindowDrag> ; Move and resize windows by holding alt and dragging anywhere
 #Include <secret> ; Any scripts that contain sensitive information. Not included in the repo.
 #Include <excel> ; Excel hotkeys
+#Include <rename> ; Advanced Renamer integration
 
 /*
 Some notes on hotkey modifier symbols

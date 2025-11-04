@@ -1,0 +1,17 @@
+{
+  "type" : "preset",
+  "program" : "Advanced Renamer 4.17",
+  "version" : 4170000,
+  "batchmode" : "rename",
+  "pairrename" : true,
+  "namecollision.rule" : "fail",
+  "methods" : [
+    {
+      "methodname" : "newname",
+      "active" : true,
+      "mask" : "<FolderName:3> <Date:mm-dd-yy> EN-<inc nr>",
+      "tagpage" : 1,
+      "applyto" : "name"
+    }
+  ]
+}
