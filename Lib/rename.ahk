@@ -59,8 +59,8 @@ DriveGetNetworkRoot(driveLetter) {
             return
         }
 
-        methodFile := A_scriptDir "\Lib\signed.aren"
-        arencPath := Format('{1}\Advanced Renamer\arenc.exe', A_ProgramFiles)
+        methodFile := A_scriptDir '\Lib\signed.aren'
+        arencPath := A_ProgramFiles '\Advanced Renamer\arenc.exe'
         Run(Format('"{1}" -e "{2}" -i "{3}" -t files -l "{4}\aren.log"', arencPath, methodFile, tempFile, EnvGet("LOCALAPPDATA")))
     } catch Error as err {
         ToolTip("Error: " err.Message)
