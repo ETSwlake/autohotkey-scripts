@@ -9,7 +9,7 @@
     {
       "methodname" : "newname",
       "active" : true,
-      "mask" : "<FolderName:3> <Date:mm-dd-yy> EN-<inc nr>",
+      "mask" : "<FolderName:3> <FolderName> EN-<inc nr>",
       "tagpage" : 1,
       "applyto" : "name"
     }

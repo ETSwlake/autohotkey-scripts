@@ -1,0 +1,48 @@
+{
+  "type" : "preset",
+  "program" : "Advanced Renamer 4.17",
+  "version" : 4170000,
+  "batchmode" : "rename",
+  "pairrename" : true,
+  "namecollision.rule" : "fail",
+  "methods" : [
+    {
+      "methodname" : "add",
+      "active" : true,
+      "position" : "1",
+      "add" : "<Img Year><Img Month><Img Day>_<Img Hour><Img Min><Img Sec>_",
+      "backwards" : false,
+      "applyto" : "name",
+      "regularexpressions" : false
+    },
+    {
+      "methodname" : "replace",
+      "active" : true,
+      "replace" : "__",
+      "replacewith" : "<year><month><day>_",
+      "casesensitive" : false,
+      "regularexpressions" : false,
+      "applyto" : "name",
+      "occurrence" : 0
+    },
+    {
+      "methodname" : "timestamp",
+      "active" : true,
+      "applyto" : "modified",
+      "change" : "image",
+      "pattern" : "<year><month><day>_"
+    },
+    {
+      "methodname" : "timestamp",
+      "active" : true,
+      "applyto" : "modified",
+      "change" : "relative",
+      "year" : 0,
+      "month" : 0,
+      "day" : 0,
+      "hour" : 0,
+      "minute" : 0,
+      "second" : 0
+    }
+  ]
+}
